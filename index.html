@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rent-a-Car</title>
+  </head>
+
+  <body>
+    <div class="container">
+        <div class="box box1"></div>
+      <div class="box box2"></div>
+      <div class="margin">
+        <!-- first part -->
+        <p class="heading">Search for a rental car</p>
+        <!-- sart input -->
+        <div class="input">
+          <span class="location">
+            <p>Pick a location</p>
+          </span>
+          <input
+            class="city"
+            type="text"
+            placeholder="City,airport,region,district.."
+          />
+
+          <span class="check-deliver">
+            <input
+              type="checkbox"
+              class="largerCheckbox"
+              name="checkBox2"
+              checked
+            />
+            <label class="deliver"> Deliver the car somewhere else</label>
+          </span>
+        </div>
+        <!-- end of input -->
+        <div class="subcontainer">
+          <!-- pickup -->
+          <div class="pickup">
+            <span class="date">
+              <p class="dates">Date of pickup</p>
+            </span>
+            <div class="pickupfull">
+              <div class="date-sat">
+                <label for="birthday">
+                  <i id="cal" class="fa-solid fa-calendar-days"></i
+                ></label>
+                <input type="date" id="sat" placeholder="" />
+              </div>
+              <div class="tenzero">
+                <label class="ten one">
+                  <i id="claendar" class="fa-solid fa-calendar-days"></i>
+                  <span class="tentext">
+                    10
+                    <i class="fa-solid fa-angle-down"></i>
+                  </span>
+                </label>
+                <label class="ten one">
+                  <i id="claendar" class="fa-solid fa-calendar-days"></i>
+                  <span class="tentext">
+                    00
+                    <i class="fa-solid fa-angle-down"></i>
+                  </span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <!-- delivery -->
+          <div class="pickup">
+            <span class="date">
+              <p class="dates">Date of Deliver</p>
+            </span>
+            <div class="pickupfull">
+              <div class="date-sat">
+                <label for="birthday">
+                  <i id="cal" class="fa-solid fa-calendar-days"></i
+                ></label>
+                <input type="date" id="sat" placeholder="" />
+              </div>
+              <div class="tenzero">
+                <label class="ten one">
+                  <i id="claendar" class="fa-solid fa-calendar-days"></i>
+                  <span class="tentext">
+                    10
+                    <i class="fa-solid fa-angle-down"></i>
+                  </span>
+                </label>
+                <label class="ten one">
+                  <i id="claendar" class="fa-solid fa-calendar-days"></i>
+                  <span class="tentext">
+                    00
+                    <i class="fa-solid fa-angle-down"></i>
+                  </span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- sbucontaienr end -->
+
+        <!-- checkox -->
+        <div class="checkbox">
+          <input type="checkbox" class="largerCheckbox" />
+          <label class="driver">
+            The driver's age between 30 and 65?<i
+              class="fa-solid fa-circle-exclamation"
+            ></i
+          ></label>
+          <ul class="check">
+            <li class="credit">
+              <i class="fa-solid fa-check"></i
+              ><span class="card">No credit card fees</span>
+            </li>
+            <li class="credit">
+              <i class="fa-solid fa-check"></i
+              ><span class="card">No change fees </span>
+            </li>
+            <li class="credit">
+              <i class="fa-solid fa-check"></i
+              ><span class="card">Price match gurantee</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- secarch button -->
+     
+          <div class="search">
+            <p class="search-box">Search</p>
+          </div>
+        
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
